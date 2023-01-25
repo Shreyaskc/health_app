@@ -1,0 +1,19 @@
+<resources>
+	<color name="white">#E5E5E5</color>
+    <color name="black">#2D2D2D</color><!-- @android:color/black -->
+    <color name="transparent">@android:color/transparent</color>
+    <color name="darker_gray">@android:color/darker_gray</color>
+    <color name="background_dark">@android:color/background_dark</color>
+    <color name="green">#A5CB5E</color>
+	<color name="errorBackground">#FDEAEA</color>
+	<color name="provider_bg">#ECECEC</color>
+	<color name="provider_list_item">#616161</color>
+   	<color name="provider_text">#7E7E7E</color>
+   	<color name="listview_divider">#E5E5E5</color>
+   	<color name="search_provider_list_name">#1089E0</color>
+   	<color name="btn_bg">#E2E2E2</color>
+   	<color name="provider_details_header">#579FEB</color>
+   	<color name="button_start">#AFE86D</color>
+	<color name="button_end">#5F8B30</color>
+	<color name="text_area_background">#FFFFFF</color>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutSetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:background="@drawable/transparnt_back"
+        android:paddingLeft="10dp" 
+        android:typeface="sans">
+
+        <TextView
+            android:id="@+id/txtEmergencyMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:text="@string/emergency_message"
+            android:textColor="@color/black" 
+            android:typeface="sans"/>
+
+        <ToggleButton
+            android:id="@+id/btnEmergencyMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/toggletoswitch"
+            android:checked="true"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="18sp"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/transparnt_back"
+        android:gravity="left"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:text="@string/change_password"
+        android:textColor="@color/black"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/transparnt_back"
+        android:gravity="left"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:text="@string/logout"
+        android:textColor="@color/black"
+        android:typeface="sans" />
+
+</LinearLayout>

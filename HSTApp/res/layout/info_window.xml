@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/group_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"
+        android:textStyle="bold" 
+        android:typeface="sans"
+        />
+
+    <TextView
+        android:id="@+id/txtAddressLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/group_name"
+        android:textColor="@color/black" 
+        android:typeface="sans"
+        />
+
+    <TextView
+        android:id="@+id/txtAddressLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/hours_open"
+        android:textColor="@color/black"
+        android:typeface="sans"
+         />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        android:background="@color/provider_bg"
+        android:typeface="sans"
+         />
+
+    <TextView
+        android:id="@+id/txtDirectionHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/hours_open"
+        android:textColor="@color/provider_details_header"
+        android:textStyle="bold" 
+        android:typeface="sans"
+        />
+
+</LinearLayout>

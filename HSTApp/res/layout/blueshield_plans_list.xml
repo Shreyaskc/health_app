@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/blueshield_plans"
+    android:background="@color/provider_bg"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/txtAcceptedBlueShield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/accepted_blue_shield_plans"
+        android:typeface="sans"
+        />
+    <ListView
+        android:id="@+id/listBlueShiledPlans"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:cacheColorHint="@color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@color/listview_divider"
+        android:dividerHeight="2dp"
+        android:layout_margin="10dp"
+        android:padding="5dp" 
+        android:typeface="sans"
+        >
+    </ListView>
+
+</LinearLayout>

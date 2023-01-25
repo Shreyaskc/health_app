@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMap"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:visibility="visible" 
+    android:background="@color/white"
+    >
+
+    <com.google.android.gms.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+    </com.google.android.gms.maps.MapView>
+
+    <EditText
+        android:id="@+id/editMile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:inputType="number"
+        android:padding="10dp"
+        android:background="@drawable/normalfield_back"
+        android:hint="@string/enter_miles" 
+        android:typeface="sans"/>
+
+    <Button
+        android:id="@+id/btnGetProviders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editMile"
+        android:textSize="18sp"
+        android:text="@string/get_providers" 
+        android:typeface="sans"/>
+
+</RelativeLayout>

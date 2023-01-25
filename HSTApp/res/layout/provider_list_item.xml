@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp" 
+    android:typeface="sans"
+    >
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:text="abcd"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:typeface="sans"
+         />
+
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtName"
+        android:padding="5dp"
+        android:textColor="@color/provider_text"
+        android:text="abcd" 
+        android:typeface="sans"
+        />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtType"
+        android:padding="5dp"
+        android:text="abcd"
+        android:textColor="@color/provider_list_item"
+        android:typeface="sans"
+         />
+
+    <TextView
+        android:id="@+id/txtAddressLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtAddress"
+        android:padding="5dp"
+        android:text="abcd"
+        android:textColor="@color/provider_list_item" 
+        android:typeface="sans"/>
+
+    <ImageView
+        android:id="@+id/imgArrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/txtDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+       android:layout_below="@+id/txtAddress"
+        android:padding="5dp"
+        android:text="abcd"
+        android:textColor="@color/provider_list_item" 
+        android:typeface="sans"/>
+
+      <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtAddressLine"
+        android:padding="5dp"
+        android:text="(948)540-5641"
+        android:textColor="@color/search_provider_list_name"
+        android:textStyle="bold"
+        android:typeface="sans" /> 
+    <TextView
+        android:id="@+id/txtViewMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtDistance"
+        android:padding="5dp"
+        android:text="View Map"
+        android:textColor="@color/search_provider_list_name"
+        android:textStyle="bold" 
+        android:typeface="sans"/> 
+
+</RelativeLayout>

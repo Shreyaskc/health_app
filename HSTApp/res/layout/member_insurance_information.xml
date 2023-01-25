@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMemberPCPInformation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:id="@+id/layoutMemberInsuranceInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp" 
+        android:typeface="sans"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mem_insurance_information"
+			android:textSize="20sp" 
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:typeface="sans"
+             />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:typeface="sans"
+            android:shrinkColumns="0"
+            android:stretchColumns="1"
+            tools:ignore="UselessParent" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" 
+                android:typeface="sans"
+                >
+
+                <TextView
+                    android:id="@+id/txtId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="@string/id_number" 
+                    android:typeface="sans"
+                    />
+
+                <TextView
+                    android:id="@+id/txtIdData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="" 
+                    android:typeface="sans"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/upper_textbox"
+                android:typeface="sans"
+                 >
+
+                <TextView
+                    android:id="@+id/txtMemberId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:typeface="sans"
+                    android:text="@string/id_number" />
+
+                <TextView
+                    android:id="@+id/txtMemberIdData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:typeface="sans"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/middle_text_box"
+                android:typeface="sans"
+                >
+
+                <TextView
+                    android:id="@+id/txtGroupId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="@string/group_num" 
+                    android:typeface="sans"/>
+
+                <TextView
+                    android:id="@+id/txtGroupIdData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text=""
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/middle_text_box"
+                android:typeface="sans"
+                 >
+
+                <TextView
+                    android:id="@+id/txtEffectiveDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="@string/effective_date"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/txtEffectiveDateData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="" 
+                    android:typeface="sans"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/middle_text_box"
+                android:typeface="sans"
+                >
+
+                <TextView
+                    android:id="@+id/txtPlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="@string/plan" 
+                    android:typeface="sans"/>
+
+                <TextView
+                    android:id="@+id/txtPlanData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="" 
+                    android:typeface="sans"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/middle_text_box"
+                android:typeface="sans"
+                 >
+
+                <TextView
+                    android:id="@+id/txtOfficeVisitCoPayAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="@string/office_visit_co_pay_amount" 
+                    android:typeface="sans"/>
+
+                <TextView
+                    android:id="@+id/txtOfficeVisitCoPayAmountData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/middle_text_box"
+                android:typeface="sans"
+                >
+
+                <TextView
+                    android:id="@+id/txtDrugCoPayAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="@string/drug_co_pay_amount" 
+                    android:typeface="sans"/>
+
+                <TextView
+                    android:id="@+id/txtDrugCoPayAmountData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/middle_text_box"
+                android:typeface="sans"
+                >
+
+                <TextView
+                    android:id="@+id/txtHospitalCoPayAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="@string/hospital_co_pay_amount"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/txtHospitalCoPayAmountData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="5dp" 
+                    android:typeface="sans"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/middle_text_box"
+                android:typeface="sans"
+                >
+
+                <TextView
+                    android:id="@+id/txtEmergencyVisitCoPayAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="@string/emergency_visit_co_pay_amount"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/txtEmergencyVisitCoPayAmountData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/lower_text_box"
+                android:typeface="sans"
+                >
+
+                <TextView
+                    android:id="@+id/txtDeductible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="@string/deductible" 
+                    android:typeface="sans"/>
+
+                <TextView
+                    android:id="@+id/txtDeductibleData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="5dp" 
+                    android:typeface="sans"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

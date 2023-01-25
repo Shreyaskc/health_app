@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_panel_grey"
+    tools:context=".MemberActivity" 
+     android:typeface="sans"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menu_header"
+        tools:ignore="NewApi" 
+       
+        >
+
+        <TextView
+            android:id="@+id/hst_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/hst"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+             android:typeface="sans"
+             />
+
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/member_info_side_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layoutHeader"
+        android:text="@string/member_information"
+        android:background="@drawable/side_panel_black" 
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:typeface="sans"
+        />
+
+    <Button
+        android:id="@+id/demographics_side_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/member_info_side_panel"
+        android:text="@string/demographics" 
+        android:background="@drawable/side_panel_button_press"
+        android:textColor="@color/white"
+        android:typeface="sans"
+        />
+
+    <Button
+        android:id="@+id/primary_care_provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/demographics_side_panel"
+        android:text="@string/primary_care_provider" 
+        android:background="@drawable/side_panel_green"
+        android:textColor="@color/white"
+        android:typeface="sans"
+        />
+      <Button
+        android:id="@+id/insurance_side_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/primary_care_provider"
+        android:text="@string/insurance" 
+        android:background="@drawable/side_panel_button_press"
+        android:textColor="@color/white"
+        android:typeface="sans"
+        />
+
+          <TextView
+        android:id="@+id/find_providers_side_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/insurance_side_panel"
+        android:text="@string/find_providers"
+        android:background="@drawable/side_panel_black"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:typeface="sans"
+        />
+      
+           <Button
+        android:id="@+id/member_demographics_side_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/find_providers_side_panel"
+        android:text="@string/mem_demographics" 
+        android:background="@drawable/side_panel_button_press"
+        android:textColor="@color/white"
+        android:typeface="sans"
+        />
+            <Button
+        android:id="@+id/contact_hst_side_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/member_demographics_side_panel"
+        android:text="@string/contact" 
+        android:background="@drawable/side_panel_button_press"
+        android:textColor="@color/white"
+        android:typeface="sans"
+        />
+             <Button
+        android:id="@+id/more_side_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/contact_hst_side_panel"
+        android:text="@string/more" 
+        android:background="@drawable/side_panel_button_press"
+        android:textColor="@color/white"
+        android:typeface="sans"
+        />
+           <TextView
+        android:id="@+id/last_side_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/more_side_panel"
+        android:background="@drawable/side_panel_black" 
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:typeface="sans"
+        />  
+          
+</RelativeLayout>
+</ScrollView>

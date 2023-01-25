@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/specificProviderLayout"
+    android:fillViewport="true" 
+    android:typeface="sans"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" 
+        android:typeface="sans"
+        >
+
+        <TextView
+            android:id="@+id/txtDesignation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor"
+            android:textColor="@color/provider_list_item"
+            android:typeface="sans"
+             />
+
+        <TextView
+            android:id="@+id/txtDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stacey L Hallarces, PT "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/provider_list_item" 
+            android:typeface="sans"
+            />
+
+        <TextView
+            android:id="@+id/txtSpecializtion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Physical Therapy"
+            android:textColor="@color/provider_list_item" 
+            android:typeface="sans"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/normalfield_back"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:typeface="sans" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/accepting_new_patients"
+                android:textColor="@color/provider_details_header"
+                android:textStyle="bold" 
+                android:typeface="sans"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/listview_divider"
+                android:typeface="sans" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/layoutAcceptedPlans"
+                android:typeface="sans" >
+
+                <TextView
+                    android:id="@+id/view_accepted_plans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/view_accepted_plans"
+                    android:textColor="@color/provider_list_item" 
+                    android:typeface="sans"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow" 
+                    android:typeface="sans"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/normalfield_back"
+            android:gravity="center_horizontal" 
+            android:typeface="sans">
+
+            <TextView
+                android:id="@+id/lablePhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/phone"
+                android:textColor="@color/provider_list_item" 
+                android:typeface="sans"/>
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="10dp"
+                android:text="(949)540-5641"
+                android:textColor="@color/provider_details_header"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/normalfield_back"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+            android:typeface="sans">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:typeface="sans" >
+
+                <TextView
+                    android:id="@+id/labelAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/address"
+                    android:textColor="@color/provider_list_item" 
+                    android:typeface="sans"/>
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="vdsdsfgsdfdsfdsfdsfdsfdsfdsfdvcvcxvcxvcvcv"
+                    android:textColor="@color/provider_list_item" 
+                    android:typeface="sans"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/listview_divider" 
+                android:typeface="sans"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutDirections" 
+                android:typeface="sans">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="@string/directions_to_here"
+                    android:textColor="@color/provider_details_header"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"
+                    android:typeface="sans" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/normalfield_back"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/lblProvider"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="provider #"
+                    android:textColor="@color/provider_list_item" />
+
+                <TextView
+                    android:id="@+id/txtProvider"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="0PT391250"
+                    android:textColor="@color/provider_list_item" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/listview_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/lblGender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gender"
+                    android:textColor="@color/provider_list_item" />
+
+                <TextView
+                    android:id="@+id/txtGender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Female"
+                    android:textColor="@color/provider_list_item" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/listview_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/lblLanguages"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/languages"
+                    android:textColor="@color/provider_list_item" />
+
+                <TextView
+                    android:id="@+id/txtLanguage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="English"
+                    android:textColor="@color/provider_list_item" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/copyright_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/copyright_info"
+            android:textColor="@color/provider_list_item" />
+    </LinearLayout>
+
+</ScrollView>

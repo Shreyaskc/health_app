@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/findProviderLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edittextName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/normalfield_back"
+            android:hint="@string/find_by_name"
+            android:padding="10dp"
+            android:typeface="sans"
+             />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/normalfield_back"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textSize="16sp" 
+            android:typeface="sans"
+            >
+
+            <TextView
+                android:id="@+id/txtWithin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/within"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:typeface="sans"
+                 />
+
+            <Spinner
+                android:id="@+id/spinnerDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:entries="@array/provider_distance"
+                android:textColor="@color/black"
+                android:textSize="16sp" 
+                android:typeface="sans"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/normalfield_back"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:textSize="16sp" 
+            android:typeface="sans"
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtMyCurrentLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/my_current_location"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" 
+                    android:typeface="sans"
+                    />
+
+                <TextView
+                    android:id="@+id/txtCurrentLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txtMyCurrentLocation"
+                    android:layout_gravity="left"
+                    android:layout_toLeftOf="@+id/chkCurrentLocation"
+                    android:padding="5dp"
+                    android:textColor="@color/provider_list_item"
+                    android:textSize="14sp" 
+                    android:typeface="sans"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chkCurrentLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp" 
+                    android:typeface="sans"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_margin="-2dp"
+                android:background="@color/listview_divider" />
+
+            <RelativeLayout
+                android:id="@+id/layoutAnother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:typeface="sans"
+                >
+
+                <TextView
+                    android:id="@+id/txtAnotherAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/another_address"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" 
+                    android:typeface="sans"
+                    />
+
+                <TextView
+                    android:id="@+id/txtAnotherAddressLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txtAnotherAddress"
+                    android:layout_gravity="left"
+                    android:layout_toLeftOf="@+id/chkAnotherLocation"
+                    android:padding="5dp"
+                    android:textColor="@color/provider_list_item"
+                    android:textSize="14sp"
+                    android:visibility="gone" 
+                    android:typeface="sans"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chkAnotherLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" 
+                    android:typeface="sans"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/choosing_providers"
+            android:textColor="@color/provider_text" 
+            android:typeface="sans"
+            />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/login"
+            android:padding="10dp"
+            android:text="@string/search"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" 
+            android:typeface="sans"
+            />
+    </LinearLayout>
+
+</ScrollView>
